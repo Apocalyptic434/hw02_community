@@ -6,8 +6,8 @@ index_template = 'posts/index.html'
 gr_p_template = 'posts/group_list.html'
 
 
-def index(request):   
-    posts = Post.objects.order_by('-pub_date')[:10] 
+def index(request):
+    posts = Post.objects.order_by('-pub_date')[:10]
     context = {'posts': posts, 'title': 'Последние обновления на сайте'}
     return render(request, index_template, context)
 
