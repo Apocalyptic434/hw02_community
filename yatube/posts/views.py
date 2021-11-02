@@ -8,7 +8,7 @@ gr_p_template = 'posts/group_list.html'
 
 '''Привет!
    А как django будет подгружать данные из static если
-   мы ее в gitignore добавляем ? 
+   мы ее в gitignore добавляем ?
    Или вы проверяете без него просто ?
 '''
 
