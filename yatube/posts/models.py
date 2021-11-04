@@ -35,10 +35,7 @@ class Post(models.Model):
     )
 
     class Meta:
-        ordering = ['-pub_date']
-        ''' Если указать списком - выкидывает ошибку:
-            Cannot resolve keyword '' into field
-        '''
+        ordering = ('-pub_date',)
         verbose_name = 'post'
 
     def __str__(self):
