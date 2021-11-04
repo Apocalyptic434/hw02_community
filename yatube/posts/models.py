@@ -37,7 +37,7 @@ class Post(models.Model):
     )
 
     class Meta:
-        ordering = ['-pub_date']
+        ordering = ('-pub_date')
         verbose_name = 'post'
 
     def __str__(self):
