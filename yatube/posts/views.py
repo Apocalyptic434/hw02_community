@@ -8,7 +8,7 @@ gr_p_template = 'posts/group_list.html'
 
 
 def index(request):
-    posts = Post.objects.order_by[:10]
+    posts = Post.objects.all()[:10]
     context = {'posts': posts, 'title': 'Последние обновления на сайте'}
     return render(request, index_template, context)
 
