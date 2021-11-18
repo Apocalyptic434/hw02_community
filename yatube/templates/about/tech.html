@@ -1,0 +1,56 @@
+<!-- templates/about/tech.html -->
+{% extends "base.html" %}
+{% block content %}
+  <html lang="ru"> <!-- Язык сайта - русский -->
+  <head>    
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Сайт готов работать с мобильными устройствами -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Загружаем фав-иконки -->
+    <link rel="icon" href="img/fav/fav.ico" type="image">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Подключен файл со стандартными стилями бустрап -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    {% block title %}<title>Технологии</title>{% endblock %}
+  </head>
+  <body>
+    <br>
+	<br>
+	<div class="container">
+	  <div class="row">
+	    <h1>Вот что я умею</h1>
+		<aside class="col-12 col-md-3">
+		  <ul class="list-group list-group-flush">
+		    <li class="list-group-item">
+			  Python
+            </li>
+		    <li class="list-group-item">
+			  Django
+		    </li>
+		    <li class="list-group-item">
+			  Bash
+		    </li>
+		    <li class="list-group-item">
+			  MySQL
+		    </li>  
+		  </ul>
+		</aside>
+	  <article class="col-12 col-md-9">
+        <p>В Django я пока-что я умею немногое - наипростейшая вёрстка, обработка страниц через view, 
+	    <br>создание моделей, валидация форм, настройка админки и прочие фичи, 
+	    <br>понимание которых мне еще предстоит довести до осознания всей структуры Django проекта.
+	    </p>
+	    <p>	
+	      Но я заряжен, и готов к самосовершествованию !
+	      Уже скоро перечень технологий изученных мной будет увеличиваться.
+	    </p>
+      </article>
+      </div>
+    </div>
+  </body>
+{% endblock %} 
